@@ -1,0 +1,101 @@
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Flexbox container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* Member cards */
+.member-card {
+    width: 300px;
+    max-width: 100%;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Member photos */
+.member-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #123456;
+    margin-bottom: 15px;
+}
+
+.member-card h2 {
+    color: #123456;
+    margin-bottom: 15px;
+}
+
+.member-card p {
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* View Website button */
+.view-btn {
+    display: inline-block;
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.view-btn:hover {
+    background-color: #005959;
+}
+
+/* Footer */
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 650px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
